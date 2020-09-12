@@ -1,5 +1,6 @@
 # GANGAN-gashuku
 GANをガンガンやる合宿
+参考　： https://github.com/GANs-in-Action
 
 # GPU用リモートサーバで計算を行いたい
 ## リモートサーバでの設定
