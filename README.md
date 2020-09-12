@@ -5,8 +5,16 @@ GANをガンガンやる合宿
 ## リモートサーバでの設定
 
 参考1 ： [リモートサーバの Jupyter Notebook を SSH Port Forwarding 経由で使う](https://blog.amedama.jp/entry/jupyter-nb-ssh-port-forwarding)  
-参考2 : [リモートサーバ上の Docker コンテナで Jupyter Notebook を使う](https://blog.amedama.jp/entry/2018/10/24/085703)
+参考2 : [リモートサーバ上の Docker コンテナで Jupyter Notebook を使う](https://blog.amedama.jp/entry/2018/10/24/085703)  
 参考3 : [sshポートフォワーディング](https://qiita.com/mechamogera/items/b1bb9130273deb9426f5)
+
+```zsh
+client $ ssh -L 8888:localhost:8888 <username>@<remotehost>
+```
+
+```
+remote $ sudo docker container run --rm -p 127.0.0.1:8888:8888 -it mimata/jupyter
+```
 
 # GANと生成モデル
 ## 1.1 敵対的生成ネットワークとは何か？
