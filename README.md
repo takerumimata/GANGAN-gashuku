@@ -63,3 +63,8 @@ GANより古い概念としてオートエンコーダがある。自分自身�
 # MNISTによる学習
 LeakyReLUとは  
 https://www.atmarkit.co.jp/ait/articles/2005/13/news009.html  
+
+# GANをうまく動かすために
+
+## WGAN
+要するに強い。ワッサースタイン距離を損失関数にするとええ感じになるらしい
